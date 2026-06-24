@@ -1,0 +1,15 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+      - sip-204-push-rtcp-metrics-to-homer
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: acclaim-ai/gh_actions/.github/workflows/build-image.yml@main
+    with:
+      image-name: hepipe-js
+    secrets: inherit
