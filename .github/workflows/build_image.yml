@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - sip-204-push-rtcp-metrics-to-homer
   workflow_dispatch:
 
 jobs:
